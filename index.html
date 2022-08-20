@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100;300&family=IBM+Plex+Mono:wght@200&family=Inconsolata:wght@200;300;400&family=Montserrat:wght@300&family=PT+Serif:ital@0;1&family=Poppins:wght@200;300;400&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;1,100&family=Roboto:ital,wght@0,300;1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <form action="javascript:void(0)" onsubmit="todoList()" id="form-id">
+          <span class="icon"><i class="fa-solid fa-pen-to-square icons"></i></span>
+          <h2>
+            <span class="head-1"
+              ><i class="fa-solid fa-pen-to-square"></i> Todo</span
+            >
+            <span> List</span>
+          </h2>
+          <input
+            type="text"
+            id="name"
+            placeholder="Type Name"
+            maxlength="20"
+            
+          />
+          <input
+            type="Email"
+            id="email"
+            placeholder="Type Email"
+            maxlength="30"
+            required
+          />
+          <input
+            type="number"
+            id="number"
+            placeholder="Type Phone Number"
+            maxlength="14"
+            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            required
+          />
+
+          <div class="btn">
+            <button type="submit" id="form-btn">Sumbit</button>
+          </div>
+        </form>
+      </div>
+      <div id="tables"></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
