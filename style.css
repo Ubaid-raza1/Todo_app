@@ -205,7 +205,29 @@ button {
 
 @media only screen and (max-width: 604px) {
     td {
-        padding: 6px 8px;
+        padding: 8px 6px;
+    }
+
+    th {
+        padding: 8px 6px;
+    }
+
+    table {
+        margin: auto;
+        border: none;
+        border-collapse: collapse;
+        font-size: 10px;
+    }
+
+    button {
+        padding: 8px 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 505px) {
+    td {
+        padding: 6px 6px;
         color: #000;
     }
 
@@ -221,14 +243,41 @@ button {
     }
 
     button {
-        padding: 6px 8px;
+        padding: 4px 6px;
         font-size: 8px;
+    }
+
+}
+
+
+@media only screen and (max-width: 373px) {
+   
+    td {
+        padding: 5px 5px;
+        color: #000;
+    }
+
+    th {
+        padding: 5px 0px;
+    }
+
+    table {
+        margin: auto;
+        border: none;
+        border-collapse: collapse;
+        font-size: 7px;
+    }
+
+    button {
+        padding: 4px 6px;
+        font-size: 7px;
     }
 }
 
-@media only screen and (max-width: 505px) {
+
+@media only screen and (max-width: 322px) {
     td {
-        padding: 4px 6px;
+        padding: 4px 4px;
         color: #000;
     }
 
@@ -245,33 +294,12 @@ button {
 
     button {
         padding: 4px 6px;
-        font-size: 4px;
+        font-size: 6px;
     }
 }
 
 
-@media only screen and (max-width: 373px) {
-    td {
-        padding: 2px 4px;
-        color: #000;
-    }
 
-    th {
-        padding: 2px 0px;
-    }
-
-    table {
-        margin: auto;
-        border: none;
-        border-collapse: collapse;
-        font-size: 4px;
-    }
-
-    button {
-        padding: 2px 4px;
-        font-size: 2px;
-    }
-}
 
 @media only screen and (max-width: 392px) {
     h2 {
